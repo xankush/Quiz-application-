@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.quizapplication.thirdontroller">
+   <children>
+      <Label layoutX="251.0" layoutY="218.0" text="Here is your result">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="155.0" fitWidth="339.0" layoutX="191.0" layoutY="28.0" pickOnBounds="true">
+         <image>
+            <Image url="@thanku.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="332.0" prefHeight="46.0" prefWidth="238.0" text="Correct choices :" textFill="#00f510">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="336.0" prefHeight="46.0" prefWidth="231.0" text="Wrong choices :" textFill="RED">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="correct" layoutX="275.0" layoutY="335.0" text="0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrong" layoutX="615.0" layoutY="340.0" prefHeight="30.0" prefWidth="1.0" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

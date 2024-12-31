@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.quizapplication.PrimaryController">
+   <children>
+      <ImageView fitHeight="430.0" fitWidth="672.0" layoutX="38.0" layoutY="12.0" opacity="0.1" pickOnBounds="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="question" layoutX="50.0" layoutY="114.0" prefHeight="39.0" prefWidth="519.0" scaleZ="50.0" text="Q. what is my name ?">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="button1" layoutX="97.0" layoutY="191.0" mnemonicParsing="false" text="hemant">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="choice" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="button3" layoutX="106.0" layoutY="283.0" mnemonicParsing="false" text="munasif" toggleGroup="$choice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="button2" layoutX="465.0" layoutY="191.0" mnemonicParsing="false" text="ankush" toggleGroup="$choice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="button4" layoutX="458.0" layoutY="283.0" mnemonicParsing="false" text="brajesh" toggleGroup="$choice">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="submit" layoutX="319.0" layoutY="391.0" mnemonicParsing="false" onAction="#printchoice" prefHeight="32.0" prefWidth="113.0" style="-fx-border-radius: 0;" text="submit">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="myclock" layoutX="502.0" layoutY="44.0" text="clock">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
